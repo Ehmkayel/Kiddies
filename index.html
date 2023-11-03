@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiddies Kredit</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
     <header>
-        <a href="#"> KiDDiesKredit</a>
+        <a href="#" class="logo"> KiDDies<span>Kredit</span></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="hamburger">
+            <i class="fa-solid fa-bars" id="open-nav"></i>
+            <i class="fa-solid fa-xmark" id="close-nav"></i>
+        </label>
         <nav>  
             <ul>
                 <li><a href="#">Features</a></li>
@@ -18,14 +24,15 @@
                 <li><a href="#">Podcast</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            
+           
         </nav>
         <button class="btn">Download</button>
+          
     </header>
    
         <section class="banner" id="container">
           
-                <hr>
+            <hr>
                 
                 <img src="./images/Ellipse 2.png" class="ellipse2"/>
                 <img src="./images/Ellipse 3.png" class="ellipse3"/>
@@ -38,13 +45,13 @@
                 <p class="Banner_heading">Building a financially free future for all</p>
                 <P>Kiddie Kredit is a mobile app designed to educate children on the credit system by completing chores.</P>
                 <div class="button">
-                    <button class="btn">App store</button>
-                    <button class="btn">Google Play</button>
+                    <button class="btn"><img src="./images/u_apple.png">Apple store</button>
+                    <button class="btn"><img src="./images/u_google-play.png">Google Play</button>
                 </div>
-                <div>
-                <img src="./images/image.png" alt="">
+                <div class="banner-img">
+                <img src="./images/image.png" alt=""> 
                 </div>
-            </div>
+            </div> 
            
         </section>
         <section class="feature">
@@ -66,31 +73,34 @@
             </div>  
     
         </section>
-        <section class="phone-section">
+         <section class="phone-section">
             <h3>THE APP</h3>
-            <h2>Simple to use features, packed with financial literacy</h2>
-            <div class="phone_container">
-            <div class="cont">
-                <div class="items">
-                    <img src="./images/Rectangle.png">
+            <p class="note">Simple to use features, packed with financial literacy</p>
+            
+            <div class="phone-container">
+                    <div class="phone-card">
+                        <div class="card-top">
+                           <img src="./images/Rectangle.png" class="image1"/> 
+                        </div> 
+                        <div class="card-bottom">
+                           <p class="text">Credit made simple</p>
+                           <p class="write">Children learn how to manage their credit score effectively, by tracking chores and monitoring results.</p>
+                        </div>
                     </div>
-                    <div class="p_text">
-                        <h3>Credit made simple</h3>
-                        <p>Children learn how to manage their credit score effectively, by tracking chores and monitoring results.</p>
-                    </div>    
-                </div>
-                <div class="cont">
-                <div class="items">
-                    <img src="./images/rectangle 14.png">
+               
+                    <div class="phone-card">
+                        <div class="card-top">
+                            <img src="/images/Rectangle2.png" class="image2"/> 
+                        </div>
+                        <div class="card-bottom">
+                                <p class="text">Educational content coming soon!</p>
+                                <p class="write">Access to assessments, educational tools ans in-house resources for building credit knowledge.</p>
+                        </div>
                     </div>
-                    <div class="p_text">
-                        <h3>Educational content coming soon!</h3>
-                        <p>Access to assessments, educational tools ans in-house resources for building credit knowledge.</p>
-                    </div>
-                   
-                </div>
+                       
             </div>
-        </section>
+                   
+        </section>  
         <section class="features">
             <h3 class="headings">Add many more amazing features</h3>
             <div class="cards">
@@ -117,9 +127,9 @@
                         <img src="./images/u_arrow-down.png">
                             Download Kiddie Kredit
                         </div>
-                    </div>
+                    </div> 
     
-            </div>
+            </div> 
         </section>
         <section id="about">
             <div class="about">
@@ -163,7 +173,7 @@
                         <p>As a parent, you  know the importance of financial literacy. Knowledge about money and how it works is essential to makin</p>
                         <a href="">Read Articla</a>
                     </div>
-                    </div>
+                    </div>  
                    
                 <div class="blog-items">
                     <div class="blog-image">
@@ -177,10 +187,10 @@
                         <a href="">Read Articla</a>
                     </div>
                   
-                </div>
+                </div> 
                 <div class="blog-items">
-                    <div class="blog-image">
-                        <img src="./images/Rectangle36.png">
+                    <div class="blog-image"> 
+                         <img src="./images/Rectangle36.png">
                     </div>
                     <div class="blog-contents">
                         <h2 class="buttonb">Guides</h2>
@@ -190,7 +200,8 @@
                         <a href="">Read Articla</a>
                     </div>
                 </div>
-            <a class="btn">View more article</a>
+                </div>
+            <button class="blog-btn">View more article</button>
 
         </section>
         <section>
@@ -205,39 +216,107 @@
                     <img src="./images/Rectangle43.png">
                 </div>
             </div>
-        </section>
-        <section>
-            <a href="">FAQS</a>
+        </section> 
+        <section class="faq-container">
+            <a href="#" class="faq">FAQS</a>
             <h3>Frequently Asked Questions</h3>
-            <P>Have questions? we’ve answers. If you can’t find what we are looking for, feel free to<a href="">get in touch</a></P>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <p>Do my child need to have their own device?</p>
-                    <img src="./images/u_plus.png" alt="addition">
-    
-                <div class="faq-item">
-                    <p>Do rewards need to be something that cost money?</p>
-                    <img src="./images/u_plus.png" alt="addition">
-                
-                <div class="faq-item">
-                    <p>Is there a cost?</p>
-                    <img src="./images/u_plus.png" alt="addition">
-                </div></div>
-                <div class="faq-item">
-                    <p>Is this tied to their actual credit score?</p>
-                    <img src="./images/u_plus.png" alt="addition">
-                </div>
-                <div class="faq-item">
-                    <p>Can this be used in the classroom?</p>
-                    <img src="./images/u_plus.png" alt="addition">
-                </div>
-                <div class="faq-item">
-                    <p>Do you offer any other products?</p>
-                    <img src="./images/u_plus.png" alt="addition">
+            <P>Have questions? we’ve answers. If you can’t find what we are looking for, feel free to<span>get in touch</span></P>
+            
+                <ul class="accordion">
+                    <div>
+                        <li class="accordion-item">Do my child need to have their own device?
+                            <img src="./images/u_plus.png" alt="addition">
+                        </li>
+                        <li class="accordion-item">Do rewards need to be something that cost money? 
+                            <img src="./images/u_plus.png" alt="addition">"
+                        </li>
+                        <li class="accordion-item">Is there a cost?<img src="./images/u_plus.png" alt="addition"></li>
+                    </div>
+                   <div>
+                    <li class="accordion-item">Is this tied to their actual credit score?<img src="./images/u_plus.png" alt="addition"></li>
+                    <li class="accordion-item">Can this be used in the classroom?<img src="./images/u_plus.png" alt="addition"></li>
+                    <li class="accordion-item">Do you offer any other products?<img src="./images/u_plus.png" alt="addition"></li>
+                   </div>
+                    
+                </ul>     
                 </div>
             </div>
-        </section>
-    </main>
+        </section> 
+         <section class="download">
+            <h3>Download Kiddie Kretie</h3>
+            <p class="text">Available for IOS and Android today - It’s free</p> 
+            <div class="download-container">
+                <div class="download-item">
+                    <h4>ios and ipados</h4>
+                    <p>Have an ios device?</p>
+                    <p>Download our free app below</p>
+                    <button class="btn">Download for ios</button>
+                    <div class="download-image">
+                        <img src="./images/Rectangle2.png">
+                    </div>  
+                </div>
+                <div class="download-item">
+                    <h4>Android</h4>
+                    <p>Have an Android device?</p>
+                    <p>Download our free app below!</p>
+                    <button class="btn">Download for Android</button>
+                    <div class="image">
+                        <img src="./images/Rectangle.png">
+                    </div>   
+                </div>
+            </div>
+        </section> 
+        <footer> 
+            <div class="footer-container"> 
+            <div class="footer-item">
+                    <a href="#" class="logo">KiDDies<span>Kredit</span></a>
+                    <ul class="kiddies">
+                        <li><a href="#"><img src="./images/u_facebook.png"></a></li>
+                        <li><a href="#"><img src="./images/u_twitter.png"></a></li>
+                        <li><a href="#"><img src="./images/u_instagram-alt.png"></a></li>
+                        <li><a href="#"><img src="./images/u_linkedin.png"></a></li>
+                    </ul>
+                    <img src="./images/image12.png"/>
+                </div>
+                <div class="footer-item links">
+                    <ul class="links">
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Organizations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item links">
+                    <ul class="links"> 
+                         <li><a href="#">Links</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Style Guide</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Quick Links</a></li> 
+
+                    </ul>
+                 </div>
+                <div class="footer-item footer-item_item">
+                    <h3>Download the Kiddie Kredit app</h3>
+                    <p>Get started today</p>
+                    <div class="footer-buttons">
+                        <button class="btn"><img src="./images/u_apple.png">App store</button>
+                        <button class="btn"><img src="./images/u_google-play.png">Google play</button>  
+                    </div>  
+                </div>
+            </div>
+            <div class="copy">
+                <hr>
+                &COPY; copyright 2021 by Kiddie Kredit | Made by <span>5four Digital</span>
+            </div>
+            
+        </footer> 
+
+    </main> 
     
 </body>
 </html>

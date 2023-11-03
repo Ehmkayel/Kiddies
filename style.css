@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Merriweather:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Averia+Libre:ital@1&family=Inter:wght@300&family=Merriweather:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;1,700&display=swap');
 
 :root {
     --white : #FFF;
@@ -8,6 +8,7 @@
     --black : #000;
     --light-grey : #576272;
     --button-light: #F8F8FD;
+    --footer: #455F7B;
     --date : #777777;
 
 }
@@ -22,6 +23,19 @@ body{
     background: var(--white);
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+}
+.logo{
+font-family: 'Averia Libre', sans-serif;
+font-weight: 400;
+font-style: italic;
+color: var(--dark);
+text-decoration: none;
+}
+
+span{
+    font-family: 'Artifika', sans-serif;
+    font-weight: 400;
+    color: #000000;
 }
 
 .btn{
@@ -48,18 +62,34 @@ header{
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 150px;
+    height: 83px;
+    padding: 32px 150px;
 }
 nav ul{
     display: flex;
-    gap: 50px;
+    gap: 37px;
     list-style-type: none;
 
 }
 nav ul a{
     text-decoration: none;
 }
+ 
+#check{
+    display: none;
+}
+#open-nav{
+    color: var(--dark);
+    font-size: 22px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+#close-nav{
+    display: none;
+}
+
 #container{
     max-width: 1440px;
     margin: 0 auto
@@ -114,7 +144,7 @@ nav ul a{
     right: 140px;
 }
 
-hr{
+.banner hr{
     border: 2px solid var(--line);
     width: 5%;
     margin-top: 90px;
@@ -142,12 +172,23 @@ text-align: center;
 margin-top: 21px;
 }
 .banner .button{
+ display: flex;
+ gap: 34px
+}
+.banner .btn{
     display: flex;
-    margin-top: 70px;
-    gap: 34px;
-    margin-bottom: 96px;
+    align-items: center;
+    gap: 9px;
+    color: var(--white);
+    margin: 69px 0 96px;
+    padding: 14px 47px 15px 68px;
 
 }
+.banner .btn img{
+    width: 24px;   
+
+}
+
 .feature{
     background-color: var(--light);
     padding: 87px 0 98px;
@@ -215,6 +256,7 @@ margin-top: 21px;
 
 .btns{
     display: flex;
+    align-items: center;
     width: 270px;
     background: var(--light-grey);
     margin: 92px auto 0;
@@ -225,23 +267,75 @@ margin-top: 21px;
     Line-height: 19.5px;
     padding: 16px 19px 21px 18px;
 }
+.phone-section{
+    padding: 0 150px;
+}
+.phone-section h3{
+    margin-top: 83px;
+    text-align: center;
+    padding-bottom: 41px;
+}
+.phone-section .note{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48.76px;
+    width: 669px;
+    margin: 0 auto;
+}
+.phone-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
-.phone_container{
-    display: flex;
-    gap: 50px;
-   
+.phone-card{
+    width: 535px;
+    margin-top: 143px;
+
+    
     
 }
-.cont{
-    background: var(--dark);
-    border-radius: 30px, 30px, 0px, 0px;
+.card-top{
+    background-color: var(--dark);
+    padding: 0 72px;
+    border-radius: 30px 30px 0 0;
 }
-.p_text{
-    background: var(--white);
-    border: 1px solid var(--white);
+.card-top img{
+    width: 100%
 }
+.image1{
+    margin-top: -50px;
+}
+.image2{
+    margin-top: -50px;
+}
+.card-bottom{
+  background-color: var(--white);
+  border: 1px solid #00000030;
+  border-radius: 0 0 30px 30px;
+ 
+}
+
+.card-bottom .text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 73px 0 22px 40px;
+    
+    
+}
+.card-bottom .write{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 84px 54px 40px;
+  
+}
+
+
 .about{
     display: flex;
+    
     
 }
 .about-content{
@@ -312,11 +406,13 @@ margin-top: 21px;
 }
 .blog > p{
     font-family:'Montserrat', sans-serif ;
+    font-style: normal;
     padding-bottom: 83px;
     font-weight: 500;
     max-width: 677px ;
     font-size: 20px;
     line-height: 24.38px;
+    margin: 0 382px;
     
 }
 .buttonb{
@@ -339,6 +435,7 @@ margin-top: 21px;
 }
 .blog-image img{
 width: 100%;
+
 }
 .blog-contents h4{
     font-family: 'montserrat', sans-serif;
@@ -362,19 +459,623 @@ width: 100%;
     color: var(--dark);
     margin-bottom: 59px;
 }
-.btn{
+.blog-btn{
     background: var(--light-grey);
     width: 251px;
-    margin: 51px 0 67px 0;
+    margin: 51px;
+    padding: 18px 51px;
+    border-radius: 30px;
+    border: none;
+
      
 }
 .image-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 49px;
 }
 .image-gallery img{
     width: 100%;
+   
 }
-.faq-container{
+.faq-container h3{
+    margin: 36px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48.76px
+    
+}
+.faq{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.38px;
+    text-decoration: none;
+    background: var(--button-light);
+    margin: 143px 653px 36px;
+    padding: 20px 54px;
+    color: #000000;
+}
+
+.faq-container p{
+    margin: 62px 356px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 29.26px;
+    max-width: 729px;
+    text-align: center;
+   
+
+}
+.faq-container span{
+    color: var(--dark);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.accordion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin: 62px 100px ;
+}
+.accordion-item{
     display: flex;
+    justify-content: space-around;
+    border: 1px solid #0000002E;
+    list-style-type: none;
+    padding: 40px 0;
+
+}
+.download{
+    padding: 0 150px;
+    background: var(--light);
+}
+.download h3{
+    text-align: center;
+    padding-top: 96px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43.88px
+
+}
+.download .text{
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.38px;
+}
+.download-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+}
+.download-item{
+    background: var(--white);
+    border-radius: 20px;
+    padding: 0 40px;
+    margin: 106px 0 82px 0;
+    width: 546px;
+    position: relative;
+}
+.download-item h4{
+    padding: 54px 0 29px ;
+}
+.download-item p{
+    padding-bottom: 17px;
+}
+.download-item .btn{
+    margin: 20px 160px;
+    width: 226px;
+   
+}
+.download-item img{
+    padding: 0 96px 0 92px;
+    
+    
+
+}
+.download-image{
+    background: url(./images/Ellipse28.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+   
+    
+}
+.download-item:nth-child(2){
+    background: var(--line);
+    color: var(--white);
+}
+
+.download-item:nth-child(2) .btn{
+    background: var(--white);
+    color: var(--dark);
+}
+footer{
+    padding: 0 150px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.footer-item {
+    padding-top: 53px;
+}
+.kiddies{
+    display: flex;
+    margin-top: 74px;
+    padding-bottom: 41px;
+    gap: 31px
+}
+
+.footer-item li{
+    list-style-type: none;
+    
+    
+}
+.footer-item a{
+   text-decoration: none;
+   color: var(--footer);
+   
+   
+}
+.footer-item_item{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item_item h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.38px;
+
+}
+.footer-item_item p{
+    color: var(--footer);
+    padding-top: 22px;
+    padding-bottom: 35px;
+}
+.footer-buttons{
+    display: flex;
+    gap: 32px;
+    
+}
+.footer-buttons .btn{
+    width: 157px;
+    padding: 14px 26px;
+    color: var(--white);
+    background: var(--light-grey);
+}
+.copy{
+    text-align: center;
+   
+    
+}
+.copy hr{
+    color: var(--black);
+    margin-top: 55px;
+    margin-bottom: 33px;
+}
+/* Responsiveness */
+     
+@media screen and (max-width: 768px), screen and (max-width: 1024px){
+
+    header{
+        padding: 20px 40px;
+    }
+
+    #open-nav{
+        display: inline-flex;
+        
+        
+    }
+    nav ul{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background: var(--dark);
+        width: 50%;
+        text-align: center;
+        display: block;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    #check:checked ~ nav ul {
+        transform: translateX(0);
+    }
+    nav ul a {
+        color: var(--white)
+    }
+    header .btn{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background: red;
+        display: block;
+        transform: translateX(-100%);
+    }
+    
+    nav ul li {
+        padding: 30px;
+       
+        
+    } 
+    .banner hr{
+        margin-top: 30px;
+    }
+    .banner .Banner_heading{
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+        color: #000;
+        line-height: 30.88px;
+        max-width: 500px;
+        margin-top: 29px;
+    }
+    .banner p{
+    font-size: 15px;
+    font-weight: 200;
+    max-width: 400px;
+    margin-top: 10px;
+    }
+    
+    .banner .button{
+        gap: 15px
+       }
+       .banner .btn{
+           gap: 4px;
+           margin: 29px 0 26px;
+           padding: 10px 27px 10px 28px;
+       
+       }
+       
+       .banner .btn img{
+           width: 20px;   
+       
+       }
+   
+   .ellipse2{
+    top: 59px; 
+    right: 49px;
+}
+.ellipse3{
+    top: 200px; 
+    right: 90px;
+}
+.ellipse4{
+    top: 92px;
+    left: 40px;
+}
+.ellipse5{
+    top: 283px;
+    left: 56px;
+}
+.ellipse6{
+    top: 435px;
+    left: 69px;
+}
+.ellipse7{
+    top: 695px;
+    left: 41px
+}
+.ellipse8{
+    top: 863px;
+    right: 60px;
+}
+.ellipse9{
+    top: 405px;
+    right: 90px;
+}
+.feature{
+    background-color: var(--dark);
+    padding: 17px 0 28px;
+    
+}
+
+.content{
+    gap: 32px;
+    padding-top: 30px;   
+    
+}
+.logos h3{
+    font-size: 20px;
+    
+    
+}
+.logos h4{
+    border: 2px solid var(--black);
+}
+
+.features .headings{
+    margin: 49px 0 34px ;
+    font-Size: 20px;
+}
+.cards{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px;
+    gap: 22px;
+}
+.item{
+   border-radius: 20px;
+   padding: 20px ;   
+  
+}
+.btns{
+    
+    margin: 17px auto 0;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 8px ;
+}
+.phone-container{
+    grid-template-columns: 1fr;
+}
+.about-content{
+    padding-left: 40px;
+    margin-top: 22px;
+}
+
+.about-content p{
+    font-size: 14px;
+    padding-bottom: 10px ;
+}
+.about-content img{
+    width: 250px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    
+    gap: 20px;
+}
+.new-feature{
+    padding: 0 40px;
+}
+.new-feature h3{
+    padding: 10px 25px 14px 16px ;
+    
+}
+.grid-item h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.grid-item p{
+    font-size: 17px;
+   
+}
+.grid-item img{
+    width: 350px;
+}
+.blog{
+    padding: 40px;
+    margin-top: 31px;
+}
+.blog-container{
+    grid-template-columns: repeat(2, 1fr);     
+}
+.blog-items{
+    border-radius: 30px;
+    background-color: var(--white);
+}
+.sub{ 
+    padding: 29px 0 21px;
+}
+.blog > p{
+    padding-bottom: 23px;
+    font-size: 16px;   
+    margin: 0 82px;
+    
+}
+.buttonb{
+    margin: 19px 0 14px 31px;
+}
+.blog-contents h3{
+    font-size: 16px;
+}
+
+.blog-btn{ 
+    margin: 31px;
+    padding: 9px 21px;
+     
+}
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 29px;
+}
+.image-gallery img{
+    width: 100%;   
+}
+.faq-container h3{
+    margin: 20px;
+    font-size: 20px;
+    
+}
+.faq{
+    margin: 23px 259px 36px;   
+}
+
+.faq-container p{
+    margin: 32px 56px;
+}
+.accordion{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 32px 50px ;
+}
+.accordion-item{
+    padding: 20px 0;
+
+}
+.download{
+    padding: 0 10px;
+    background: var(--dark);
+}
+.download h3{
+    padding-top: 26px;
+    font-size: 26px;
+
+}
+.download .text{
+    padding-top: 20px;
+    font-size: 14px;
+}
+    
+.download-container{ 
+    gap: 20px;
+}
+.download-item{
+     margin: 36px 0 32px 0;
+    width: 365px;  
+}
+.download-item h4{
+    padding: 34px 0 16px ;
+}
+.download-item p{
+    padding-bottom: 14px;
+}
+.download-item .btn{
+    margin: 35px 50px; 
+}
+.download-item img{
+    width: 350px;
+    padding: 0 46px 0 42px;
+}
+.download-image{
+    background-size: cover;
+
+}
+footer{
+    padding: 0 40px;
+}
+.footer-container{
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.kiddies{
+    margin-top: 34px;
+    padding-bottom: 21px;
+    gap: 21px
+}
+
+.footer-item_item h3{
+    font-size: 15px;
+
+}
+.footer-item_item p{
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+.footer-buttons{
+    display: flex;
+    gap: 22px;
+    
+}
+.footer-buttons .btn{
+    padding: 10px 20px;
+}
+
+
+}
+@media screen and (max-width: 480px), screen and (max-width: 600px){
+    .ellipse2{
+        top: 29px; 
+        right: 29px;
+    }
+    .ellipse3{
+        top: 100px; 
+        right: 20px;
+    }
+    .ellipse4{
+        top: 39px;
+        left: 40px;
+    }
+    .ellipse5{
+        top: 93px;
+        left: 16px;
+    }
+   
+    .ellipse7{
+        top: 795px;
+        left: 41px
+    }
+    .ellipse8{
+        top: 800px;
+        right: 95px;
+    }
+  .logos img{
+    width: 35px
+  }
+  .cards{
+    grid-template-columns:  1fr;
+    padding: 50px;
+  
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.about-content{
+    padding-left: 40px;
+}
+
+.about-content p{
+    font-size: 14px;
+    padding-bottom: 5px ;
+}
+.about-content img{
+    width: 350px;
+}
+.grid-container{
+    
+    grid-template-columns: 1fr;
+    
+}
+.blog-container{
+    grid-template-columns: 1fr;     
+}
+.blog > p{
+    padding-bottom: 23px;
+    font-size: 16px;   
+    margin: 0 42px;
+    
+}
+.phone-section{
+    padding: 0 40px;
+}
+.phone-section .note{
+    font-size: 20px;
+}
+.image-gallery{
+    grid-template-columns: 1fr;
+    margin-bottom: 22px;
+}
+
+.faq-container p{
+    margin: 22px 26px;
+    font-size: 17px;
+} 
+.faq{
+    margin: 0 59px 36px;   
+}  
+.download-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer-container{
+    grid-template-columns: 1fr;
+    
+}
 }
