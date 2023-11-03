@@ -290,9 +290,7 @@ margin-top: 21px;
 
 .phone-card{
     width: 535px;
-    margin-top: 143px;
-
-    
+    margin: 143px auto;    
     
 }
 .card-top{
@@ -334,8 +332,7 @@ margin-top: 21px;
 
 
 .about{
-    display: flex;
-    
+    display: flex;  
     
 }
 .about-content{
@@ -354,8 +351,7 @@ margin-top: 21px;
 .grid-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    
+    margin: 0 auto;   
     gap: 130px;
 }
 .new-feature{
@@ -561,7 +557,7 @@ width: 100%;
     background: var(--white);
     border-radius: 20px;
     padding: 0 40px;
-    margin: 106px 0 82px 0;
+    margin: 106px auto 82px ;
     width: 546px;
     position: relative;
 }
@@ -706,8 +702,11 @@ footer{
     
     nav ul li {
         padding: 30px;
-       
+    }      
         
+        .banner-img img{
+
+       width: 100%;
     } 
     .banner hr{
         margin-top: 30px;
@@ -828,7 +827,7 @@ footer{
     padding-bottom: 10px ;
 }
 .about-content img{
-    width: 250px;
+    width: 100%;
 }
 
 .grid-container{
@@ -854,7 +853,7 @@ footer{
    
 }
 .grid-item img{
-    width: 350px;
+    width: 100%;
 }
 .blog{
     padding: 40px;
@@ -891,7 +890,7 @@ footer{
 .image-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 29px;
+    margin-left: 5px;
 }
 .image-gallery img{
     width: 100%;   
@@ -1074,6 +1073,7 @@ footer{
 
 .phone-card{
     width: 255px;
+    margin: 56px auto;
 }
 .card-bottom .text{
     font-size: 17px;
@@ -1107,6 +1107,9 @@ footer{
 .download-container{
     display: grid;
     grid-template-columns: 1fr;
+}
+.download-item{
+    margin: auto;
 }
 .download-container img{
     width: 250px
