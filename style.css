@@ -919,7 +919,7 @@ footer{
 
 }
 .download{
-    padding: 0 10px;
+    padding: 0 5px;
     background: var(--dark);
 }
 .download h3{
@@ -990,6 +990,7 @@ footer{
 
 }
 @media screen and (max-width: 480px), screen and (max-width: 600px){
+   
     .ellipse2{
         top: 29px; 
         right: 29px;
@@ -1008,12 +1009,12 @@ footer{
     }
    
     .ellipse7{
-        top: 795px;
-        left: 41px
+        top: 500px;
+        left: 31px
     }
     .ellipse8{
-        top: 800px;
-        right: 95px;
+        top: 550px;
+        right: 65px;
     }
   .logos img{
     width: 35px
@@ -1023,12 +1024,15 @@ footer{
     padding: 50px;
   
 }
+.banner-img img{
+    width: 100%
+}
 .about{
     display: grid;
     grid-template-columns: 1fr;
 }
 .about-content{
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .about-content p{
@@ -1036,7 +1040,7 @@ footer{
     padding-bottom: 5px ;
 }
 .about-content img{
-    width: 350px;
+    width: 100%;
 }
 .grid-container{
     
@@ -1058,9 +1062,39 @@ footer{
 .phone-section .note{
     font-size: 20px;
 }
+
+.phone-section .note{
+   
+    width: 359px;
+    margin: 0 auto;
+}
+.phone-container{
+    grid-template-columns: 1fr;
+}
+
+.phone-card{
+    width: 255px;
+}
+.card-bottom .text{
+    font-size: 17px;
+    padding: 43px 0 22px 20px;
+    
+    
+}
+.card-bottom .write{
+    font-size: 14px;
+    padding: 0 24px 24px 15px;
+  
+}
+.grid-item img{
+    width: 100%
+}
 .image-gallery{
     grid-template-columns: 1fr;
     margin-bottom: 22px;
+}
+.image-gallery img{
+    width: 100%
 }
 
 .faq-container p{
@@ -1073,6 +1107,9 @@ footer{
 .download-container{
     display: grid;
     grid-template-columns: 1fr;
+}
+.download-container img{
+    width: 250px
 }
 .footer-container{
     grid-template-columns: 1fr;
