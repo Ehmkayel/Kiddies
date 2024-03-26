@@ -79,7 +79,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
     height: 83px;
     padding: 32px 100px;
     
@@ -123,9 +122,14 @@ nav ul a{
     position: relative;
 
 }
+
+.banner-img img{
+    width: 700px
+}
  
 .banner > img{
     position: absolute;
+    
    
 }
 .ellipse{
@@ -157,11 +161,11 @@ nav ul a{
     left: 200px
 }
 .ellipse8{
-    top: 1063px;
+    top: 900px;
     right: 110px;
 }
 .ellipse9{
-    top: 855px;
+    top: 700px;
     right: 140px;
 }
 
@@ -318,6 +322,8 @@ margin-top: 21px;
 }
 
 .phone-card{
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
     margin: 143px auto;    
     
@@ -341,7 +347,7 @@ margin-top: 21px;
   background-color: var(--white);
   border: 1px solid #00000030;
   border-radius: 0 0 30px 30px;
-  object-fit: contain;
+  flex: 1;
  
 }
 
@@ -368,9 +374,10 @@ margin-top: 21px;
     align-items: center;
     
 }
+
 .about-content{
-    padding-left: 100px;
-    margin-top: 42px;
+    margin-top: 70px;
+    
 }
 
 .about-content-text p{
@@ -383,27 +390,30 @@ margin-top: 21px;
 
 .about-content-text{
     max-width: 700px;
-    padding-left: 150px;
+    padding-left: 100px;
+   
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;   
-    gap: 130px;
+    margin: 40px auto;   
+    gap: 100px;
 }
 .new-feature{
-    padding: 0 150px;
+    padding: 0 100px;
 }
 .new-feature h3{
     cursor: pointer;
+    border-radius: 20px;
     background: var(--button-light);
     width: 153px;
     padding: 17px 35px 18px 36px ;
     font-family: 'montserrat' sans-serif;
     font-weight: 700;
     font-size: 24px;
-    line-height: 29.26px
+    line-height: 29.26px;
+    margin-top: 10px;
 }
 .grid-item h2{
     font-family: 'Montserrat', sans-serif;
@@ -419,7 +429,7 @@ margin-top: 21px;
     line-height: 29.26px
 }
 .blog{
-    padding: 0 150px;
+    padding: 0 100px;
     background: var(--light);
     margin-top: 121px;
 }
@@ -443,23 +453,26 @@ margin-top: 21px;
     font-style: normal;
     padding-bottom: 83px;
     font-weight: 500;
-    max-width: 677px ;
-    font-size: 20px;
+    text-align: center;
+    font-size: 24px;
     line-height: 24.38px;
-    margin: 0 382px;
+    
     
 }
+
 .buttonb{
     color: var(--dark);
     cursor: pointer;
     margin: 29px 0 22px 61px;
 }
+
 .blog-contents h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 20px;
     Line-height: 24.38px;
 }
+
 .blog-contents{
     display: grid;
     gap: 12px;
@@ -518,20 +531,21 @@ width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 40px;
-    line-height: 48.76px
+   
     
 }
 .faq{
-    text-align: center;
+    display: flex;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24.38px;
     text-decoration: none;
     background: var(--button-light);
-    margin: 143px 653px 36px;
     padding: 20px 54px;
     color: #000000;
+    margin: 20px auto;
+    width: 150px;
+    
 }
 
 .faq-container p{
@@ -575,7 +589,7 @@ width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 36px;
-    line-height: 43.88px
+    
 
 }
 .download .text{
@@ -584,7 +598,7 @@ width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24.38px;
+    
 }
 .download-container{
     display: grid;
@@ -634,7 +648,7 @@ width: 100%;
     color: var(--dark);
 }
 footer{
-    padding: 0 150px;
+    padding: 0 100px;
 }
 .footer-container{
     display: grid;
@@ -973,7 +987,7 @@ footer{
     gap: 20px;
 }
 .download-item{
-     margin: 36px 0 32px 0;
+    margin: 36px 0;
     width: 365px;  
 }
 .download-item h4{
@@ -1139,9 +1153,22 @@ footer{
     margin: 22px 26px;
     font-size: 17px;
 } 
+
 .faq{
-    margin: 0 59px 36px;   
-}  
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    background: var(--button-light);
+    padding: 10px;
+    color: #000000;
+    margin: 20px auto;
+    width: 80px;
+   
+    
+}
+
 .download-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -1156,4 +1183,8 @@ footer{
     grid-template-columns: 1fr;
     
 }
+}
+
+@media  screen and (min-width: 320px) {
+    
 }
