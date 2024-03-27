@@ -30,7 +30,6 @@ main{
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    background-color: red;
    
 }
 
@@ -103,6 +102,7 @@ nav ul a{
     position: absolute;
     right: 5%;
     display: none;
+    top: 30px;
 }
 #close-nav{
     display: none;
@@ -731,9 +731,10 @@ footer{
         top: 90px;
         left: 0;
         background: var(--dark);
-        width: 50%;
+        width: 100%;
         text-align: center;
         display: block;
+        z-index: 1;
         transform: translateX(-100%);
         transition: transform 0.3s ease;
     }
@@ -1112,13 +1113,11 @@ footer{
 }
 .phone-section .note{
     font-size: 20px;
-}
-
-.phone-section .note{
-   
     width: 359px;
     margin: 0 auto;
 }
+
+
 .phone-container{
     grid-template-columns: 1fr;
 }
@@ -1185,6 +1184,101 @@ footer{
 }
 }
 
-@media  screen and (min-width: 320px) {
+@media  screen and (min-width: 320px) and (max-width: 400px) {
+
+    .ellipse2{
+        top: 49px; 
+        right: 10px;
+    }
+    .ellipse3{
+        top: 100px; 
+        right: 20px;
+    }
+    .ellipse4{
+        top: 39px;
+        left: 20px;
+    }
+    .ellipse5{
+        top: 93px;
+        left: 16px;
+    }
+   
+    .ellipse7{
+        top: 500px;
+        left: 31px
+    }
+    .ellipse8{
+        top: 500px;
+        right: 25px;
+    }
+
+    .phone-section{
+        padding: 0 40px;
+    }
+    .phone-section .note{
+        font-size: 16px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .about-content-text{
+        padding-left: 10px;
+    }
     
+    .about-content-text p{
+        font-size: 14px;
+        padding-bottom: 5px ;
+    }
+    .about-content img{
+        width: 100%;
+    }
+
+    .blog{
+        padding: 0 20px;
+        
+    }
+
+    .blog > p{
+        padding-bottom: 43px;
+        font-size: 14px;
+        
+        
+        
+    }
+
+    .blog-contents{
+        padding: 0 15px 0;
+        
+    }
+
+    .blog-contents h3{
+        font-size: 16px;
+        
+    }
+
+    .blog-btn{
+        width: 150px;
+        padding: 18px 21px;
+    
+         
+    }
+
+    .download-container img{
+        width: 200px
+    }
+
+    .download-item{
+        margin: 36px 0;
+        width: 265px;  
+    }
+
+    .download-item .btn{
+        margin: 10px;
+        width: 200px
+    }
+
+    .footer-buttons{
+        flex-direction: column;
+
+    }
 }
