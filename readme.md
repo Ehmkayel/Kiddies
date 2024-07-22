@@ -21,7 +21,7 @@ To install and run this project, follow these steps:
 3. Start the development server 
 
 ### View
-This project can be view on [Live Link](playful-puffpuff-655ba0.netlify.app/)
+This project can be view on [Live Link](https://playful-puffpuff-655ba0.netlify.app/)
 
 ### Features:
 This website includes the following features:
