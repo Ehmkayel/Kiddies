@@ -1,14 +1,14 @@
 Name: Kiddies Website Clone
 Cloned by: Lamidi Morufat Kajogbola
 
-##
--[Description](#description)
--[Installation](#installation)
--[View](#view)
--[Features](#features)
--[Known Issues](#known-issues)
--[Technologies](#technologies)
--[Get In Touch](#get-in-touch)
+## Table of contents
+- [Description](#description)
+- [Installation](#installation)
+- [View](#view)
+- [Features](#features)
+- [Known Issues](#known-issues)
+- [Technologies](#technologies)
+- [Get In Touch](#get-in-touch)
 
 ### Description:
 This is a cloned version of a website, created as a task to demonstrate my skills in website development 
